@@ -13,5 +13,5 @@ module.exports = {
     "<rootDir>/integration-tests/testResultsProcessor/",
     "<rootDir>/integration-tests/reporter/"
   ],
-  reporters: ['default', 'jest-junit']
+  reporters: ["default", "jest-junit"]
 };

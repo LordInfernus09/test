@@ -38,7 +38,8 @@ commands:
             - $HOME/.npm
       - run:
           name: unit test
-          command: ci:test
+          command: |
+            npm run ci:test
           environment: 
             JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:

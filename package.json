@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "ci:test": "jest --runInBand --ci  --reporters=default --reporters=jest-junit-reporter --coverage --coverageDirectory=coverage"
+    "jest-junit": {
+      "outputDirectory": "./reports/junit",
+      "outputName": "test-results.xml"
+    }
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.5.1",
-    "jest-junit-reporter": {
-      "^1.1.0"
-      "outputDirectory": "./reports/junit",
-      "outputName": "test-results.xml"
-    }
+    "jest-junit-reporter": "^1.1.0"
   }
 }

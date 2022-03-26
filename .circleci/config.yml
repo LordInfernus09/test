@@ -38,9 +38,9 @@ commands:
             - $HOME/.npm
       - run:
           name: unit test
-          command: |
-            mkdir -p ./reports/junit
-            npm run ci:test
+          command: ci:test
+          environment: 
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
           path: ./reports/junit/
   upload-coverage:

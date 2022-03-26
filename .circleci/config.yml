@@ -39,6 +39,7 @@ commands:
       - run:
           name: unit test
           command: |
+            mkdir -p ./reports/junit
             npm run ci:test
       - store_test_results:
           path: ./reports/junit/

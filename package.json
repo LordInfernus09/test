@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ci:test": "jest --runInBand --ci  --reporters=default  --coverage --coverageDirectory=coverage"
+    "ci:test": "jest --runInBand --ci  --reporters=default --reporters=jest-junit-reporter --coverage --coverageDirectory=coverage"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.5.1",
-    "jest-junit-reporter": "^1.1.0"
+    "jest-junit-reporter": {
+      "outputDirectory": "./reports/junit",
+      "outputName": "test-results.xml"
+    }
   }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ci:test": "jest --runInBand --ci  --reporters=default --reporters='jest-junit'"
+    "ci:test": "jest --runInBand --ci  --reporters=jest-junit --coverage --coverageDirectory=coverage"
   },
   "author": "",
   "license": "ISC",

@@ -13,6 +13,6 @@
     "jest-junit-reporter": "^1.1.0"
   },
    "jest": {
-    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+    "testResultsProcessor": "./node_modules/jest-junit"
   }
 }
